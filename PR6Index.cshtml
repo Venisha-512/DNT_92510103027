@@ -1,0 +1,35 @@
+﻿@model List<p6.Models.Product>
+
+@{
+    Layout = null;
+}
+<div>
+    <h1>Welcome</h1>
+
+   
+        <table border="2">
+            <tr>
+            <th>
+                Name
+            </th>
+            <th>
+                    Category
+                </th>   
+            <th>
+                    Price
+            </th>
+            <th>
+                    More Info
+            </th>
+            </tr>
+    @foreach (var i in Model){
+            <tr>
+                <td>@i.Name</td>
+                <td>@i.Category</td>
+                <td>@i.Price</td>
+                <td>@Html.ActionLink("More Info", "Details", new { id = i.Id })</td>
+            </tr>
+    }
+        </table>
+    
+</div>
