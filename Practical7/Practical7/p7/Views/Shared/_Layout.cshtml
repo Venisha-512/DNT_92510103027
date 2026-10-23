@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Student Feedback Portal</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="wrap">
+            <h1>Student Feedback Portal</h1>
+            <nav>
+                @Html.ActionLink("All Feedback", "Index", "Feedback")
+                @Html.ActionLink("Give Feedback", "Create", "Feedback")
+            </nav>
+        </div>
+    </header>
+
+    <main class="wrap">
+        @RenderBody()
+    </main>
+
+    <footer class="site-footer">
+        &copy; @DateTime.Now.Year - Marwadi University | 01CE1523 .NET Technologies
+    </footer>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

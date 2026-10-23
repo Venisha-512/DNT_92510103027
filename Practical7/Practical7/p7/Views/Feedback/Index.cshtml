@@ -1,0 +1,22 @@
+@model List<Feedback>
+
+@{
+    ViewData["Title"] = "All Feedback";
+}
+
+<h2>Submitted Feedback</h2>
+
+@if (TempData["Success"] != null)
+{
+    <div class="alert-success">@TempData["Success"]</div>
+}
+
+<p class="summary">
+    Total responses: <strong>@ViewBag.Total</strong> &nbsp;|&nbsp;
+    Average rating: <strong>@(((double)ViewBag.Average).ToString("0.0")) / 5</strong>
+</p>
+
+@foreach (var item in Model)
+{
+    @await Html.PartialAsync("_FeedbackCard", item)
+}

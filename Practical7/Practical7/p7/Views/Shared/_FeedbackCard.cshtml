@@ -1,0 +1,11 @@
+@model Feedback
+
+<div class="card">
+    <div class="card-top">
+        <span class="card-name">@Model.Name</span>
+        <span class="badge">@Model.Subject</span>
+        <span class="stars">@(new string('★', Model.Rating))@(new string('☆', 5 - Model.Rating))</span>
+    </div>
+    <p>@Model.Comments</p>
+    <small>@Model.Email &middot; @Model.SubmittedOn.ToString("dd MMM yyyy")</small>
+</div>
