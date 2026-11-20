@@ -1,0 +1,118 @@
+body {
+    background: #f4f7f9;
+    color: #16232e;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.topbar {
+    background: linear-gradient(90deg, #0d262b, #0e4a47);
+    padding: 0.85rem 0;
+}
+
+.brand {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.brand span {
+    color: #4fd1c5;
+}
+
+.page-head {
+    background: linear-gradient(135deg, #0d262b, #115e59);
+    color: #fff;
+    padding: 1.75rem 2rem;
+    border-radius: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.eyebrow {
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+    color: #5eead4;
+}
+
+.form-heading .eyebrow {
+    color: #0f766e;
+}
+
+.stats {
+    display: flex;
+    gap: 1rem;
+}
+
+.stat {
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    padding: 0.8rem 1.25rem;
+    text-align: center;
+    min-width: 110px;
+}
+
+.stat strong {
+    display: block;
+    font-size: 1.35rem;
+}
+
+.stat span {
+    font-size: 0.78rem;
+    opacity: 0.85;
+}
+
+.stock {
+    display: inline-block;
+    padding: 0.2rem 0.65rem;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.82rem;
+}
+
+.stock.good { background: #dcfce7; color: #166534; }
+.stock.warning { background: #fef3c7; color: #92400e; }
+.stock.danger { background: #fee2e2; color: #991b1b; }
+
+.form-wrap {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.delete-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #fee2e2;
+    color: #dc2626;
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+}
+
+.summary {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0.4rem 1.5rem;
+    text-align: left;
+    max-width: 260px;
+    background: #f8fafc;
+    padding: 0.85rem 1.25rem;
+    border-radius: 10px;
+}
+
+.foot {
+    text-align: center;
+    color: #64748b;
+    font-size: 0.85rem;
+    padding: 1.5rem 0 2rem;
+}
